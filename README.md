@@ -48,6 +48,12 @@ Each skill folder contains:
 - `LICENSE.txt`: license for that skill’s contents.
 - Optional `references/`, `assets/`, and `scripts/`.
 
+## Validation
+Run the local validator before pushing:
+```bash
+python scripts/validate_skills.py
+```
+
 ## Contributing
 - Keep skills self-contained and avoid adding new runtime dependencies unless necessary.
 - Prefer small, copy/pasteable assets that work in real repos (for `frontend-design`, assume Next.js **App Router**).

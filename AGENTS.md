@@ -17,6 +17,7 @@ No build/test automation is configured yet. Until it exists, use lightweight che
 
 - `git status`: confirm only intended files changed.
 - `git diff`: review the final patch before committing.
+- `python scripts/validate_skills.py`: validate SKILL frontmatter, required files, and referenced paths.
 
 If you add runnable code (Node/Python/etc.), add a single canonical entry point (e.g., `package.json` scripts or a `Makefile`) and update this section with commands like `make lint`, `make test`, and `make fmt`.
 
