@@ -1,6 +1,6 @@
 ---
 name: senior-data-scientist
-description: Data science workflow for turning ambiguous questions into measurable metrics, experiments, and models. Use when framing hypotheses, selecting metrics, designing A/B tests, building predictive models, doing error analysis, or writing experiment/model reports with clear assumptions and caveats.
+description: "Data science workflow for turning ambiguous questions into measurable metrics, experiments, and models. Use when framing hypotheses, selecting metrics, designing A/B tests, building predictive models, doing error analysis, or writing experiment/model reports with clear assumptions and caveats."
 ---
 
 # Senior Data Scientist

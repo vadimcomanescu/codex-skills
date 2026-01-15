@@ -1,6 +1,6 @@
 ---
 name: senior-devops
-description: DevOps workflow for CI/CD, infrastructure, observability, reliability, and safe deployments. Use when designing deployment pipelines, reviewing infra changes, improving operational readiness (alerts/runbooks), or auditing a repo’s production-readiness signals.
+description: "DevOps workflow for CI/CD, infrastructure, observability, reliability, and safe deployments. Use when designing deployment pipelines, reviewing infra changes, improving operational readiness (alerts/runbooks), or auditing a repo’s production-readiness signals."
 ---
 
 # Senior DevOps

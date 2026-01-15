@@ -1,6 +1,6 @@
 ---
 name: senior-secops
-description: Security operations workflow for vulnerability triage, incident response, detection/alerting improvements, and post-incident hardening. Use when responding to security alerts, reviewing logs for suspicious activity, building incident playbooks, or running quick log summaries during triage.
+description: "Security operations workflow for vulnerability triage, incident response, detection/alerting improvements, and post-incident hardening. Use when responding to security alerts, reviewing logs for suspicious activity, building incident playbooks, or running quick log summaries during triage."
 ---
 
 # Senior SecOps

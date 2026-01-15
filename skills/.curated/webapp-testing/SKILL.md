@@ -1,6 +1,6 @@
 ---
 name: webapp-testing
-description: Local webapp testing workflow using Python + Playwright: start servers, explore DOM, take screenshots, capture console logs, and verify user flows. Use when debugging UI behavior, validating frontend changes, or creating lightweight end-to-end checks for a local dev server.
+description: "Local webapp testing workflow using Python + Playwright: start servers, explore DOM, take screenshots, capture console logs, and verify user flows. Use when debugging UI behavior, validating frontend changes, or creating lightweight end-to-end checks for a local dev server."
 ---
 
 # Web App Testing (Playwright)

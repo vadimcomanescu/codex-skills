@@ -1,6 +1,6 @@
 ---
 name: senior-backend
-description: Backend engineering workflows for designing and implementing robust APIs and services: data modeling, authN/authZ, error handling, performance, migrations, observability, and operational safety. Use when building or reviewing backend code, defining API contracts, planning DB changes, or writing backend design docs.
+description: "Backend engineering workflows for designing and implementing robust APIs and services: data modeling, authN/authZ, error handling, performance, migrations, observability, and operational safety. Use when building or reviewing backend code, defining API contracts, planning DB changes, or writing backend design docs."
 ---
 
 # Senior Backend

@@ -1,6 +1,6 @@
 ---
 name: senior-computer-vision
-description: Computer vision engineering workflow for dataset design, model selection (detection/segmentation/classification), evaluation, inference optimization, and deployment. Use when planning or reviewing CV systems, auditing datasets, defining metrics/splits, or diagnosing model/inference issues.
+description: "Computer vision engineering workflow for dataset design, model selection (detection/segmentation/classification), evaluation, inference optimization, and deployment. Use when planning or reviewing CV systems, auditing datasets, defining metrics/splits, or diagnosing model/inference issues."
 ---
 
 # Senior Computer Vision

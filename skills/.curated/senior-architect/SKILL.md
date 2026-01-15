@@ -1,6 +1,6 @@
 ---
 name: senior-architect
-description: Senior software architecture workflows and tooling for system design, scalability and reliability planning, API/data modeling, trade-off analysis, ADR writing, and producing clear architecture diagrams (Mermaid). Use when you need to define or revise architecture for a feature/system, choose technologies, document decisions, or review an existing codebase’s architecture.
+description: "Senior software architecture workflows and tooling for system design, scalability and reliability planning, API/data modeling, trade-off analysis, ADR writing, and producing clear architecture diagrams (Mermaid). Use when you need to define or revise architecture for a feature/system, choose technologies, document decisions, or review an existing codebase’s architecture."
 ---
 
 # Senior Architect

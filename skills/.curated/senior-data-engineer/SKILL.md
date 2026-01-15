@@ -1,6 +1,6 @@
 ---
 name: senior-data-engineer
-description: Data engineering workflows for designing reliable pipelines and datasets: ingestion, transforms, orchestration, schema evolution, data contracts, quality checks, and observability. Use when building ETL/ELT, reviewing pipelines, defining warehouse/lake schemas, or diagnosing data quality incidents.
+description: "Data engineering workflows for designing reliable pipelines and datasets: ingestion, transforms, orchestration, schema evolution, data contracts, quality checks, and observability. Use when building ETL/ELT, reviewing pipelines, defining warehouse/lake schemas, or diagnosing data quality incidents."
 ---
 
 # Senior Data Engineer

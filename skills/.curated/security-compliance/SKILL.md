@@ -1,6 +1,6 @@
 ---
 name: security-compliance
-description: Security and compliance workflow for designing defense-in-depth controls, performing threat modeling and risk assessments, and mapping mitigations to frameworks (SOC2/ISO27001/GDPR/HIPAA). Use when reviewing security posture, shipping sensitive features, preparing compliance evidence, or running a lightweight secrets scan.
+description: "Security and compliance workflow for designing defense-in-depth controls, performing threat modeling and risk assessments, and mapping mitigations to frameworks (SOC2/ISO27001/GDPR/HIPAA). Use when reviewing security posture, shipping sensitive features, preparing compliance evidence, or running a lightweight secrets scan."
 ---
 
 # Security & Compliance
