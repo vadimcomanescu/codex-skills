@@ -1,0 +1,19 @@
+%% Sitemap / App Map (Mermaid)
+%% Goal: show hierarchy and navigation "places" (not UI layout).
+%% Tip: keep global nav items near the top; show local nav under each.
+
+flowchart TD
+  A["(Entry) Home / Dashboard"] --> B["Section 1 (global nav)"]
+  A --> C["Section 2 (global nav)"]
+  A --> D["Settings (global nav)"]
+
+  B --> B1["Overview"]
+  B --> B2["List / Collection"]
+  B2 --> B3["Detail (object)"]
+
+  C --> C1["Overview"]
+  C --> C2["Workflow / Task"]
+
+  D --> D1["User settings"]
+  D --> D2["Workspace/Org settings"]
+

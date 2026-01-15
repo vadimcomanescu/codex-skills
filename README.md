@@ -50,6 +50,7 @@ All skills listed below are in the `curated` tier (stable and recommended).
 | --- | --- | --- |
 | `code-reviewer` | High-signal PR/diff review workflow + review report generator | `skills/.curated/code-reviewer` |
 | `frontend-design` | Next.js App Router–first UI redesigns with bold aesthetics, motion, accessibility, and AI-native UX patterns | `skills/.curated/frontend-design` |
+| `information-architect` | Information architecture workflows: navigation, sitemaps, taxonomy, labeling, content models, and findability | `skills/.curated/information-architect` |
 | `security-compliance` | Threat modeling, controls checklists, lightweight secrets scanning | `skills/.curated/security-compliance` |
 | `senior-architect` | System design + architecture docs (ADRs, Mermaid diagrams, trade-offs) and lightweight repo analysis | `skills/.curated/senior-architect` |
 | `senior-backend` | Backend API/service design workflows + backend design doc scaffold | `skills/.curated/senior-backend` |

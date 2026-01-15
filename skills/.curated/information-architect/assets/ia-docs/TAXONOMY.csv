@@ -1,0 +1,3 @@
+facet_or_category,description,applies_to,values_example,governance_owner,creation_rule,notes
+status,High-signal state users filter by,projects,"Draft; In review; Published",Product,"Admin-only",Keep values stable; avoid synonyms
+
