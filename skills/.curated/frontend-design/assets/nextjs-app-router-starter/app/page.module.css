@@ -135,6 +135,10 @@
   padding: 18px;
 }
 
+.rail {
+  margin-top: 16px;
+}
+
 .panelHeader {
   display: flex;
   align-items: baseline;
@@ -238,4 +242,3 @@
     grid-column: span 12;
   }
 }
-

@@ -5,6 +5,10 @@
   --ink: rgba(255, 255, 255, 0.92);
   --muted: rgba(255, 255, 255, 0.68);
   --accent: #6ee7ff;
+  --danger: #ff5a7a;
+  --warning: #ffcc66;
+  --success: #55f2b1;
+  --info: #6ea8ff;
 
   --radius-sm: 10px;
   --radius-md: 16px;
@@ -63,4 +67,3 @@ a {
     scroll-behavior: auto !important;
   }
 }
-

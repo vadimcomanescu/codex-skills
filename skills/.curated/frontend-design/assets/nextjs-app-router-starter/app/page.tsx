@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import { AssistantRail } from "../components/AssistantRail";
 
 const quickWins = [
   {
@@ -70,6 +71,10 @@ export default function Page() {
               ))}
             </ul>
           </aside>
+
+          <div className={styles.rail}>
+            <AssistantRail />
+          </div>
         </section>
 
         <section className={styles.content} aria-labelledby="cards" id="cards">
@@ -92,4 +97,3 @@ export default function Page() {
     </div>
   );
 }
-

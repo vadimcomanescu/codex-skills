@@ -28,8 +28,10 @@ Build memorable, functional interfaces with a clear point-of-view (no generic te
 - Match complexity to the vision: refined minimalism needs restraint; maximalism needs deliberate structure (not random decoration).
 - Respect `prefers-reduced-motion` for all animations.
 - Avoid “AI slop” defaults. If the repo already uses a generic font, keep it unless the user explicitly wants new typography.
+- Enforce token semantics: error/success/warning colors are for meaning, not decoration; keep contrast accessible in light/dark.
 - Default to shipping code that is easy to maintain: small components, clear hierarchy, minimal dependencies.
 - Don’t add new packages (animation libs, UI kits, icon sets) unless the user explicitly asks or the repo already uses them.
+- Default to one primary CTA per view; demote the rest (secondary/tertiary) to avoid competing actions.
 
 ## Workflow
 
@@ -37,6 +39,11 @@ Build memorable, functional interfaces with a clear point-of-view (no generic te
 - Declare: aesthetic direction, palette mood, type pairing, and the signature move.
 - Write a 1–2 sentence design thesis that explains the hierarchy and vibe.
 - Use `references/anti-patterns.md` to avoid predictable layouts and cliched palettes.
+
+### 1b) Design system rules (strict vs flexible)
+- **Strict**: semantic color meaning, readable type ramp, reduced motion, visible focus, and “human-in-control” for AI actions (undo/apply/confirm).
+- **Flexible**: brand accent hue, surface “temperature” in dark mode, and density preset (compact vs comfy).
+- **When to read more**: load `references/tokens-and-semantics.md` when defining tokens and `references/ai-native-ui-patterns.md` when adding AI surfaces.
 
 ### 1a) React/Next.js coding guidance (read when implementing)
 - **React fundamentals**: keep components pure; prefer event handlers over Effects for user-driven work; follow the Rules of Hooks.
@@ -91,6 +98,8 @@ Build memorable, functional interfaces with a clear point-of-view (no generic te
 - `references/implementation-patterns.md`: layout/motion/a11y patterns for vanilla + React.
 - `references/anti-patterns.md`: quick “don’t do this” checklist to avoid generic output.
 - `references/react-next-best-practices.md`: React + Next.js coding guidelines (hooks, effects, server/client, data fetching).
+- `references/tokens-and-semantics.md`: token semantics, type ramp, dark mode, and density rules (strict vs flexible).
+- `references/ai-native-ui-patterns.md`: copilot panels, citations, disclosures, and human-in-the-loop UI patterns.
 - `assets/vanilla-starter/`: runnable vanilla starter you can copy + retheme via CSS variables.
 - `assets/react-component-starter/`: small React component + CSS module skeleton to retheme.
 - `assets/nextjs-app-router-starter/`: minimal Next.js App Router page + tokens you can copy and retheme.
