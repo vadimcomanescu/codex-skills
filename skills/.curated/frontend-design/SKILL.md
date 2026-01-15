@@ -38,6 +38,12 @@ Build memorable, functional interfaces with a clear point-of-view (no generic te
 - Write a 1–2 sentence design thesis that explains the hierarchy and vibe.
 - Use `references/anti-patterns.md` to avoid predictable layouts and cliched palettes.
 
+### 1a) React/Next.js coding guidance (read when implementing)
+- **React fundamentals**: keep components pure; prefer event handlers over Effects for user-driven work; follow the Rules of Hooks.
+- **Next.js App Router**: keep Client Components small; use Server Components by default; mark `"use client"` only where you need state, effects, or browser APIs.
+- **Data fetching**: prefer server-side `fetch` and explicit cache/revalidate controls; avoid unnecessary client-side effects for data.
+- **When to read more**: load `references/react-next-best-practices.md` before writing complex React logic or introducing new data fetching patterns.
+
 ### 2) Plan tokens and layout (before details)
 - Define CSS variables (or a theme object) for:
   - Color: background/surface/ink/muted/accent(+optional accent2)
@@ -84,6 +90,7 @@ Build memorable, functional interfaces with a clear point-of-view (no generic te
 - `references/aesthetic-playbook.md`: strong directions, type+color cues, signature moves.
 - `references/implementation-patterns.md`: layout/motion/a11y patterns for vanilla + React.
 - `references/anti-patterns.md`: quick “don’t do this” checklist to avoid generic output.
+- `references/react-next-best-practices.md`: React + Next.js coding guidelines (hooks, effects, server/client, data fetching).
 - `assets/vanilla-starter/`: runnable vanilla starter you can copy + retheme via CSS variables.
 - `assets/react-component-starter/`: small React component + CSS module skeleton to retheme.
 - `assets/nextjs-app-router-starter/`: minimal Next.js App Router page + tokens you can copy and retheme.
