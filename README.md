@@ -7,6 +7,7 @@ Installable skills for Codex. This repo is structured as a skills “catalog”:
 | Skill | Tier | What it’s for | Install path |
 | --- | --- | --- | --- |
 | `frontend-design` | curated | Next.js App Router–first UI redesigns with bold aesthetics, motion, and accessibility | `skills/.curated/frontend-design` |
+| `senior-architect` | curated | System design + architecture docs (ADRs, Mermaid diagrams, trade-offs) and lightweight repo analysis | `skills/.curated/senior-architect` |
 
 ## Install
 

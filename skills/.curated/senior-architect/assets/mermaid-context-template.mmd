@@ -1,0 +1,9 @@
+flowchart LR
+  %% Context diagram (edit labels, add/remove nodes)
+  User[User] -->|Uses| Web[Web App]
+  Web -->|Calls| API[API]
+  API -->|Reads/Writes| DB[(Database)]
+
+  %% External systems
+  API -->|Integrates| ThirdParty[3rd-party Service]
+
