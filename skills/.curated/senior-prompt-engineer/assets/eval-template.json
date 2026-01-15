@@ -1,0 +1,17 @@
+{
+  "prompt_file": "PROMPT.md",
+  "notes": "Fill in test cases. Keep them small and representative.",
+  "cases": [
+    {
+      "name": "happy-path",
+      "input": {
+        "user_request": "..."
+      },
+      "expected": {
+        "must_include": ["..."],
+        "must_not_include": ["..."]
+      }
+    }
+  ]
+}
+

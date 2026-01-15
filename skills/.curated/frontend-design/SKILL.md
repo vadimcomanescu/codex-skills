@@ -1,8 +1,6 @@
 ---
 name: frontend-design
 description: Create distinctive, production-grade frontend UI with a bold, intentional aesthetic direction, purposeful layouts, meaningful motion, and strong accessibility. Prefer React + Next.js (TypeScript), but support vanilla HTML/CSS/JS when appropriate.
-metadata:
-  short-description: Bold, accessible frontend UI design workflows
 ---
 
 # Frontend Design
