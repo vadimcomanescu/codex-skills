@@ -8,6 +8,7 @@ Installable skills for Codex. This repository is a “skills catalog”: each sk
 ## Contents
 - [Install](#install)
 - [Skills](#skills)
+- [Experimental Skills](#experimental-skills)
 - [Repository Layout](#repository-layout)
 - [Validation](#validation)
 - [Contributing](#contributing)
@@ -23,6 +24,7 @@ In Codex, ask:
 “Install the skill from `https://github.com/vadimcomanescu/codex-skills/tree/main/skills/.curated/frontend-design`”
 
 To install a different skill, swap the final path segment (e.g. `skills/.curated/code-reviewer`).
+For experimental skills, use `skills/.experimental/<skill-name>` and expect breaking changes.
 
 ### Option B: Install by script (copy/paste)
 ```bash
@@ -63,6 +65,33 @@ All skills listed below are in the `curated` tier (stable and recommended).
 | `senior-secops` | Incident/vuln triage workflow + log summary tooling | `skills/.curated/senior-secops` |
 | `test-driven-development` | TDD workflow (red/green/refactor) + testing anti-patterns | `skills/.curated/test-driven-development` |
 | `webapp-testing` | Local UI testing with Playwright + `with_server.py` helper | `skills/.curated/webapp-testing` |
+
+## Experimental Skills
+
+Experimental skills are usable but still changing. Expect breaking changes to prompts, assets, or scripts.
+
+| Skill | What it’s for | Install path |
+| --- | --- | --- |
+| `accessibility-auditor` | WCAG audits, ARIA implementation, inclusive design remediation | `skills/.experimental/accessibility-auditor` |
+| `agents-crewai` | CrewAI agent team design and orchestration | `skills/.experimental/agents-crewai` |
+| `api-integration-specialist` | Third-party API integrations with auth, retries, and rate limits | `skills/.experimental/api-integration-specialist` |
+| `changelog-generator` | Turn git history into user-friendly changelogs | `skills/.experimental/changelog-generator` |
+| `dispatching-parallel-agents` | Split complex tasks into parallel agent workloads | `skills/.experimental/dispatching-parallel-agents` |
+| `error-resolver` | Reproduce, isolate, and fix failing errors safely | `skills/.experimental/error-resolver` |
+| `feature-design-assistant` | Turn ideas into specs with scope, risks, and acceptance criteria | `skills/.experimental/feature-design-assistant` |
+| `file-organizer` | Safe file/folder cleanup and organization workflows | `skills/.experimental/file-organizer` |
+| `finishing-a-development-branch` | Finalize branches with clean status and checks | `skills/.experimental/finishing-a-development-branch` |
+| `gh-address-comments` | Address GitHub PR comments with `gh` | `skills/.experimental/gh-address-comments` |
+| `gh-fix-ci` | Inspect PR checks via `gh` and fix failing CI | `skills/.experimental/gh-fix-ci` |
+| `git-commit-helper` | Craft clear, conventional commits | `skills/.experimental/git-commit-helper` |
+| `meeting-insights-analyzer` | Extract communication insights from meeting transcripts | `skills/.experimental/meeting-insights-analyzer` |
+| `planning-with-files` | Persistent markdown planning and tracking | `skills/.experimental/planning-with-files` |
+| `product-manager-toolkit` | PRDs, RICE, discovery synthesis, prioritization | `skills/.experimental/product-manager-toolkit` |
+| `senior-frontend` | Production frontend workflows and scaffolding | `skills/.experimental/senior-frontend` |
+| `senior-fullstack` | Full-stack architecture and scaffolding workflows | `skills/.experimental/senior-fullstack` |
+| `systematic-debugging` | Root-cause debugging before fixes | `skills/.experimental/systematic-debugging` |
+| `ui-design-system` | Design system tooling and token generation | `skills/.experimental/ui-design-system` |
+| `using-git-worktrees` | Create isolated git worktrees safely | `skills/.experimental/using-git-worktrees` |
 
 ## Repository Layout
 
