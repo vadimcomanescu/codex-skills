@@ -22,6 +22,10 @@ Write the test first, then write the smallest change that makes it pass, then re
 - Keep tests deterministic: control time, randomness, and network.
 - If a test is hard to write, your design likely needs an interface seam.
 
+## Red/Green/Refactor checklist
+- Red: test fails for the right reason (not setup errors).
+- Green: smallest change to pass, no extra behavior.
+- Refactor: improve structure without changing behavior or tests.
+
 ## References
 - Common anti-patterns: `references/testing-anti-patterns.md`
-

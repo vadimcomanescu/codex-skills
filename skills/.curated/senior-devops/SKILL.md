@@ -13,6 +13,11 @@ Make deployments repeatable and incidents survivable.
 3) Observability: logs/metrics/traces + alerts tied to user impact.
 4) Runbooks: how to debug and how to roll back safely.
 
+## Release readiness checklist
+- Rollback path is tested and documented.
+- Alerts are tied to user-facing impact and have clear owners.
+- Deploys are scoped, with feature flags for risky changes.
+
 ## Optional tool: repo ops inventory
 ```bash
 python ~/.codex/skills/senior-devops/scripts/repo_ops_inventory.py . --out /tmp/ops_inventory.md
@@ -20,4 +25,3 @@ python ~/.codex/skills/senior-devops/scripts/repo_ops_inventory.py . --out /tmp/
 
 ## References
 - Deployment checklist: `references/deploy-checklist.md`
-

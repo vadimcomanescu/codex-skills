@@ -15,6 +15,11 @@ Build real security, not checkbox security.
 3) Controls: pick practical controls (authN/authZ, encryption, logging, rate limits, backups, key mgmt).
 4) Evidence: document decisions and “how we know it works” (configs, screenshots, logs, tests).
 
+## Output artifacts (default)
+- 5-item threat model table (abuse case → impact → mitigation).
+- Control checklist mapped to the system’s trust boundaries.
+- Evidence list: concrete proofs (configs, logs, tests) with where to find them.
+
 ## Optional tool: scan for likely secrets in a repo
 ```bash
 python ~/.codex/skills/security-compliance/scripts/secret_scan.py . --json --output /tmp/secrets.json
@@ -23,4 +28,3 @@ python ~/.codex/skills/security-compliance/scripts/secret_scan.py . --json --out
 ## References
 - Threat model template: `references/threat-model.md`
 - Control checklist: `references/control-checklist.md`
-

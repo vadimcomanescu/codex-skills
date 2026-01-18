@@ -18,6 +18,16 @@ Give reviews that help the author ship safely and quickly.
 3) Leave comments that are:
    - **Actionable** (what to change) + **why** (risk/benefit) + **scope** (must vs nice-to-have)
 
+## Large diff triage (use when the change is big)
+- Start with the entrypoints and high-risk files (auth, payments, data writes).
+- Identify invariants the change must preserve, then hunt for violations.
+- Skim for mechanical changes and collapse them; focus deep review on behavioral deltas.
+
+## When to request changes
+- Bugs or correctness issues that can ship user-impacting failures.
+- Security/privacy regressions or data handling gaps.
+- Missing or inadequate tests for new behavior or fixed bugs.
+
 ## Output format (recommended)
 - **Summary**: what the change does
 - **Major issues**: must-fix items (blockers)
@@ -33,4 +43,3 @@ python ~/.codex/skills/code-reviewer/scripts/review_diff.py --base origin/main -
 
 ## References
 - Review checklist and comment style: `references/review-checklist.md`
-

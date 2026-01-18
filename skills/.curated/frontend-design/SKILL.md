@@ -78,6 +78,11 @@ Build memorable, functional interfaces with a clear point-of-view (no generic te
 - **Fonts**: if changing typography in Next.js, prefer `next/font` to avoid FOIT/FOUT surprises.
 - **Styling**: keep it consistent—CSS Modules, Tailwind, or the existing system; don’t introduce a new one without asking.
 
+### 3b) Content + states (don’t ship empty shells)
+- Define loading, empty, and error states for any data-driven UI.
+- Keep copy tight and purposeful; avoid placeholder lorem unless asked.
+- Preserve existing product terminology unless the user requests copy changes.
+
 ### 4) Polish and QA
 - Responsive pass: collapse grids, maintain padding, preserve CTA prominence on mobile.
 - Accessibility pass: landmarks, one `h1`, labels, contrast, focus order, skip link when relevant.
