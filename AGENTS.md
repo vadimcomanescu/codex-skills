@@ -25,6 +25,7 @@ If you add runnable code (Node/Python/etc.), add a single canonical entry point 
 - Indentation: 2 spaces for Markdown lists; avoid hard tabs.
 - Filenames: use `kebab-case` for skill directories (e.g., `skills/.curated/frontend-design/`).
 - Skill docs: keep `SKILL.md` task-focused, with numbered steps and short examples (commands and paths in backticks).
+- For long examples or tutorials, move content to `references/examples.md` and link it from `SKILL.md`.
 - Scripts: prefer small, composable scripts with clear usage (`--help` or header comments) and deterministic output.
 
 ## Testing Guidelines
