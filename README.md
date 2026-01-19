@@ -57,6 +57,7 @@ All skills listed below are in the `curated` tier (stable and recommended).
 ### Platform (`platform`)
 | Skill | What it’s for | Install path |
 | --- | --- | --- |
+| `react-best-practices` | Vercel React/Next.js performance and architecture best practices | `skills/.curated/platform/react-best-practices` |
 | `senior-architect` | System design + architecture docs (ADRs, Mermaid diagrams, trade-offs) and lightweight repo analysis | `skills/.curated/platform/senior-architect` |
 | `senior-backend` | Backend API/service design workflows + backend design doc scaffold | `skills/.curated/platform/senior-backend` |
 | `senior-devops` | CI/CD, ops readiness, observability, safe deployments + repo ops inventory | `skills/.curated/platform/senior-devops` |
@@ -100,7 +101,6 @@ Experimental skills are usable but still changing. Expect breaking changes to pr
 ### Platform (`platform`)
 | Skill | What it’s for | Install path |
 | --- | --- | --- |
-| `react-best-practices` | Vercel React/Next.js performance and architecture best practices | `skills/.experimental/platform/react-best-practices` |
 | `senior-frontend` | Production frontend workflows and scaffolding | `skills/.experimental/platform/senior-frontend` |
 | `senior-fullstack` | Full-stack architecture and scaffolding | `skills/.experimental/platform/senior-fullstack` |
 
