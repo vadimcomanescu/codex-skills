@@ -8,7 +8,28 @@ from typing import Dict, List, Tuple
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILLS_ROOT = ROOT / "skills" / ".curated"
+SKILLS_ROOTS = [
+    ROOT / "skills" / ".curated",
+    ROOT / "skills" / ".experimental",
+]
+
+
+def iter_skill_dirs(root: Path) -> List[Path]:
+    skill_dirs: List[Path] = []
+    for entry in sorted(root.iterdir()):
+        if not entry.is_dir():
+            continue
+        # Backwards-compatible: allow skills directly under the tier root.
+        if (entry / "SKILL.md").exists():
+            skill_dirs.append(entry)
+            continue
+        # Category folder: collect skills one level deeper.
+        for subdir in sorted(entry.iterdir()):
+            if not subdir.is_dir():
+                continue
+            if (subdir / "SKILL.md").exists():
+                skill_dirs.append(subdir)
+    return skill_dirs
 
 
 def parse_frontmatter(text: str) -> Tuple[Dict[str, str], List[str]]:
@@ -85,17 +106,19 @@ def check_skill(skill_dir: Path) -> List[str]:
 
 
 def main() -> None:
-    if not SKILLS_ROOT.exists():
-        raise SystemExit(f"Missing skills directory: {SKILLS_ROOT}")
+    missing_roots = [root for root in SKILLS_ROOTS if not root.exists()]
+    if missing_roots:
+        missing_list = ", ".join(str(root) for root in missing_roots)
+        raise SystemExit(f"Missing skills directories: {missing_list}")
 
     all_errors: List[str] = []
-    for skill_dir in sorted(SKILLS_ROOT.iterdir()):
-        if not skill_dir.is_dir():
-            continue
-        errs = check_skill(skill_dir)
-        if errs:
-            all_errors.append(f"[{skill_dir.name}]")
-            all_errors.extend([f"  - {e}" for e in errs])
+    for root in SKILLS_ROOTS:
+        for skill_dir in iter_skill_dirs(root):
+            errs = check_skill(skill_dir)
+            if errs:
+                rel = skill_dir.relative_to(ROOT)
+                all_errors.append(f"[{rel.as_posix()}]")
+                all_errors.extend([f"  - {e}" for e in errs])
 
     if all_errors:
         print("Skill validation failed:\n" + "\n".join(all_errors))

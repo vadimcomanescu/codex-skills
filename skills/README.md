@@ -1,9 +1,9 @@
 # Skills
 
-This directory follows the same conventions as `openai/skills`:
+This directory follows the same conventions as skill catalogs with category groupings:
 
-- `skills/.experimental/<skill-name>/`: work-in-progress skills.
-- `skills/.curated/<skill-name>/`: stable, recommended skills.
+- `skills/.experimental/<category>/<skill-name>/`: work-in-progress skills.
+- `skills/.curated/<category>/<skill-name>/`: stable, recommended skills.
 
 ## Skill Folder Requirements
 Each skill folder must contain:
@@ -18,4 +18,4 @@ Optional:
 
 ## Naming
 - Folder names use `kebab-case` and should match the skill’s frontmatter `name`.
-- Example path: `skills/.curated/frontend-design/`.
+- Example path: `skills/.curated/design/frontend-design/`.
