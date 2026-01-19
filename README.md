@@ -100,6 +100,7 @@ Experimental skills are usable but still changing. Expect breaking changes to pr
 ### Platform (`platform`)
 | Skill | What it’s for | Install path |
 | --- | --- | --- |
+| `react-best-practices` | Vercel React/Next.js performance and architecture best practices | `skills/.experimental/platform/react-best-practices` |
 | `senior-frontend` | Production frontend workflows and scaffolding | `skills/.experimental/platform/senior-frontend` |
 | `senior-fullstack` | Full-stack architecture and scaffolding | `skills/.experimental/platform/senior-fullstack` |
 

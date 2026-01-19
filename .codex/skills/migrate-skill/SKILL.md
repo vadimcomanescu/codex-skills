@@ -23,6 +23,9 @@ Use the $skill-creator skill to guide the creation/update workflow for each impo
    - Keep `SKILL.md` frontmatter limited to `name` and `description`.
    - Keep instructions concise, task-focused, with numbered steps.
    - Preserve attribution in `LICENSE.txt` (add upstream credits if present).
+   - Do not keep extra docs in the skill root (e.g. `README.md`, `AGENTS.md`, `CHANGELOG.md`).
+     - Move compiled/extended docs into `references/` (e.g. `references/AGENTS.md`).
+     - Move collections of rules or guides into `references/` (e.g. `references/rules/`).
    - Keep skills self-contained; if shared utilities are needed, put them in `shared/` and reference from `SKILL.md`.
 3) Run `python scripts/validate_skills.py` and fix any errors.
 4) Summarize: what was imported, where it landed, and any assumptions/questions.

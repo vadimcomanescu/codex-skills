@@ -1,0 +1,8 @@
+License Status: Unspecified (Upstream)
+
+The upstream repository did not include a license file at the time of import.
+Source: https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practices
+
+This content is included here for internal reference only until the upstream
+license is clarified. Do not redistribute externally without confirming the
+license terms with the upstream authors.
