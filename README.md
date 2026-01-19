@@ -118,6 +118,14 @@ CI runs the same validator on PRs and pushes to `main`.
 - Keep skills self-contained and avoid adding new runtime dependencies unless necessary.
 - Prefer small, copy/pasteable assets that work in real repos (for `frontend-design`, assume Next.js **App Router**).
 - Keep `SKILL.md` concise; move deep detail into `references/` (progressive disclosure).
+
+## Sources & Acknowledgements
+
+We keep a list of upstream sources we reference for ideas, patterns, and skills and acknowledge them here:
+
+- `https://github.com/davila7/claude-code-templates`
+- `https://github.com/anthropics/skills`
+- `https://github.com/openai/skills`
 - Run `python scripts/validate_skills.py` before opening a PR.
 
 ## License
