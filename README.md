@@ -113,6 +113,7 @@ Experimental skills are usable but still changing. Expect breaking changes to pr
 ### AI (`ai`)
 | Skill | What it’s for | Install path |
 | --- | --- | --- |
+| `audiocraft-audio-generation` | AudioCraft text-to-music and text-to-audio generation with MusicGen and AudioGen | `skills/.experimental/ai/audiocraft-audio-generation` |
 | `agents-crewai` | CrewAI agent team design and orchestration | `skills/.experimental/ai/agents-crewai` |
 | `api-integration-specialist` | Third-party API integrations with auth, retries, and rate limits | `skills/.experimental/ai/api-integration-specialist` |
 | `dispatching-parallel-agents` | Split complex tasks into parallel agent workloads | `skills/.experimental/ai/dispatching-parallel-agents` |
