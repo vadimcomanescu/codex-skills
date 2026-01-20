@@ -12,35 +12,40 @@ Installable skills for Codex. This repository is a “skills catalog”: each sk
 - [Repository Layout](#repository-layout)
 - [Validation](#validation)
 - [Contributing](#contributing)
+- [Support](#support)
 - [License](#license)
 
 ## Install
 
-Codex skills can be installed directly from a GitHub folder path.
+Use the official `npx` installer to fetch skills from this repo and install them into your Codex skills directory (defaults to `~/.codex/skills`, or `$CODEX_HOME/skills` if set).
 
-### Option A: Install by URL (recommended)
-In Codex, ask:
-
-“Install the skill from `https://github.com/vadimcomanescu/codex-skills/tree/main/skills/.curated/design/frontend-design`”
-
-To install a different skill, swap the category + skill segments (e.g. `skills/.curated/quality/code-reviewer`).
-For experimental skills, use `skills/.experimental/<category>/<skill-name>` and expect breaking changes.
-
-### Option B: Install by script (copy/paste)
+### Install one or more skills (recommended)
 ```bash
-python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo vadimcomanescu/codex-skills \
-  --path skills/.curated/design/frontend-design
+npx codex-skills-registry@latest --skill=design/frontend-design --yes
 ```
 
-### Install multiple skills in one shot
+You can repeat `--skill` to install multiple skills:
 ```bash
-python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo vadimcomanescu/codex-skills \
-  --path skills/.curated/design/frontend-design \
-  --path skills/.curated/quality/code-reviewer \
-  --path skills/.curated/security/security-compliance
+npx codex-skills-registry@latest \
+  --skill=design/frontend-design \
+  --skill=quality/code-reviewer \
+  --skill=security/security-compliance \
+  --yes
 ```
+
+### List available skills
+```bash
+npx codex-skills-registry@latest --list
+```
+
+### Install location and options
+- `--local`: install into `<repo>/.codex/skills` instead of the global Codex skills directory.
+- `--dest=<path>`: explicit install root (overrides `--local`).
+- Re-run the same command to update an installed skill; `--yes` overwrites without prompting.
+
+### Requirements and installer docs
+- Requires Node.js and npm (so `npx` is available).
+- Installer docs: `https://github.com/vadimcomanescu/codex-skills-registry/tree/main/packages/codex-skills-registry`
 
 Restart Codex after installing to pick up new skills.
 
@@ -171,6 +176,12 @@ We keep a list of upstream sources we reference for ideas, patterns, and skills 
 - `https://github.com/anthropics/skills`
 - `https://github.com/openai/skills`
 - Run `python scripts/validate_skills.py` before opening a PR.
+
+## Support
+
+If this project saves you time, consider supporting it:
+
+[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/vadim984)
 
 ## License
 
