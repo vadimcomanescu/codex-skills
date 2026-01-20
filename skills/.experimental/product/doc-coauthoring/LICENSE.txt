@@ -1,0 +1,2 @@
+Upstream source: https://github.com/anthropics/skills/tree/main/skills/doc-coauthoring
+No LICENSE.txt was provided in the upstream skill directory.
