@@ -26,20 +26,41 @@ In Codex, ask:
 To install a different skill, swap the category + skill segments (e.g. `skills/.curated/quality/code-reviewer`).
 For experimental skills, use `skills/.experimental/<category>/<skill-name>` and expect breaking changes.
 
-### Option B: Install by script (copy/paste)
+### Option B: Install using `npx` from CLI (also recommended)
+
+Start by listing skills:
+```
+npx codex-skills-registry@latest --list
+```
+
+Then install, for example, the `design/information-architect` skill:
+```
+npx codex-skills-registry@latest --skill=design/information-architect --yes
+```
+
+### Option C: Install by script (copy/paste)
 ```bash
-python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo vadimcomanescu/codex-skills \
   --path skills/.curated/design/frontend-design
 ```
 
 ### Install multiple skills in one shot
+Here's how to install multiple skills from CLI from shell:
 ```bash
-python ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo vadimcomanescu/codex-skills \
-  --path skills/.curated/design/frontend-design \
-  --path skills/.curated/quality/code-reviewer \
-  --path skills/.curated/security/security-compliance
+for curated_skill in \
+  design/information-architect \
+  platform/senior-architect \
+  platform/senior-backend \
+  platform/senior-devops \
+  quality/code-reviewer \
+  quality/senior-qa \
+  quality/test-driven-development \
+  /quality/webapp-testing \
+  /security/security-compliance \
+  /security/senior-secops; do
+    python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py --repo vadimcomanescu/codex-skills --path skills/.curated/$curated_skill
+done
 ```
 
 Restart Codex after installing to pick up new skills.
