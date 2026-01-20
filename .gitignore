@@ -4,3 +4,10 @@ __pycache__/
 *.pyd
 .python-version
 .DS_Store
+
+# Claude Code local settings
+.claude/*.local.*
+
+# Local-only skills
+.codex/skills/migrate-skill/
+.codex/skills/discover-skills/
