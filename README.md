@@ -108,6 +108,11 @@ Experimental skills are usable but still changing. Expect breaking changes to pr
 | --- | --- | --- |
 | `senior-frontend` | Production frontend workflows and scaffolding | `skills/.experimental/platform/senior-frontend` |
 | `senior-fullstack` | Full-stack architecture and scaffolding | `skills/.experimental/platform/senior-fullstack` |
+| `vincent-wallet` | Policy-limited wallet for agents (EVM + Solana) without exposing private keys | `skills/.experimental/platform/vincent-wallet` |
+| `vincent-polymarket` | Polymarket trading for agents via Vincent wallets | `skills/.experimental/platform/vincent-polymarket` |
+| `vincent-trade-manager` | Automated stop-loss, take-profit, and trailing stops for Polymarket positions | `skills/.experimental/platform/vincent-trade-manager` |
+| `vincent-brave-search` | Brave web and news search via Vincent proxy | `skills/.experimental/platform/vincent-brave-search` |
+| `vincent-twitter` | Twitter/X search, profiles, and recent tweets via Vincent proxy | `skills/.experimental/platform/vincent-twitter` |
 
 ### Quality (`quality`)
 | Skill | What it’s for | Install path |
