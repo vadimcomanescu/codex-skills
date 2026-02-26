@@ -123,6 +123,7 @@ Experimental skills are usable but still changing. Expect breaking changes to pr
 | `agents-crewai` | CrewAI agent team design and orchestration | `skills/.experimental/ai/agents-crewai` |
 | `api-integration-specialist` | Third-party API integrations with auth, retries, and rate limits | `skills/.experimental/ai/api-integration-specialist` |
 | `dispatching-parallel-agents` | Split complex tasks into parallel agent workloads | `skills/.experimental/ai/dispatching-parallel-agents` |
+| `fabric-marketplace` | Agent-native marketplace: discover listings/requests, budgeted search, structured offers + safe contact handoff | `skills/.experimental/ai/fabric-marketplace` |
 
 ### Product (`product`)
 | Skill | What it’s for | Install path |
