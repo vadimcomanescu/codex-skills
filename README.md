@@ -136,6 +136,7 @@ Experimental skills are usable but still changing. Expect breaking changes to pr
 | Skill | What it’s for | Install path |
 | --- | --- | --- |
 | `changelog-generator` | Turn git history into user-friendly changelogs | `skills/.experimental/devtools/changelog-generator` |
+| `codex-skin-pack-installer` | Download and stage public-safe Codex desktop skin packs with restore-first guidance | `skills/.experimental/devtools/codex-skin-pack-installer` |
 | `file-organizer` | Safe file/folder cleanup and organization workflows | `skills/.experimental/devtools/file-organizer` |
 | `finishing-a-development-branch` | Finalize branches with clean status and checks | `skills/.experimental/devtools/finishing-a-development-branch` |
 | `gh-address-comments` | Address GitHub PR comments with `gh` | `skills/.experimental/devtools/gh-address-comments` |
